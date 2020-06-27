@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class = title ><h1>Calculator</h1></div> 
+    <table> 
+       <tr> 
+          <td colspan="3"><input type="text" id="result" placeholder="0"></td> 
+          <!-- clr() function will call clr to clear all value -->
+          <td><input type="button" value="c" onclick="clr()"/> </td> 
+       </tr> 
+       <tr> 
+          <!-- create button and assign value to each button -->
+          <!-- getNumber("1") will call function getNumber to getNumberplay value -->
+          <td><input type="button" value="2" onclick="getNumber('2')" class = "nbr"> </td> 
+          <td><input type="button" value="3" onclick="getNumber('3')" class = "nbr"> </td> 
+          <td><input type="button" value="1" onclick="getNumber('1')" class = "nbr"> </td> 
+          <td><input type="button" value="/" onclick="getNumber('/')" > </td> 
+       </tr> 
+       <tr> 
+          <td><input type="button" value="4" onclick="getNumber('4')" class = "nbr"> </td> 
+          <td><input type="button" value="5" onclick="getNumber('5')" class = "nbr"> </td> 
+          <td><input type="button" value="6" onclick="getNumber('6')" class = "nbr"> </td> 
+          <td><input type="button" value="-" onclick="getNumber('-')"> </td> 
+       </tr> 
+       <tr> 
+          <td><input type="button" value="7" onclick="getNumber('7')" class = "nbr"> </td> 
+          <td><input type="button" value="8" onclick="getNumber('8')" class = "nbr"> </td> 
+          <td><input type="button" value="9" onclick="getNumber('9')" class = "nbr"> </td> 
+          <td><input type="button" value="+" onclick="getNumber('+')"> </td> 
+       </tr> 
+       <tr> 
+          <td><input type="button" value="." onclick="getNumber('.')" class = "nbr"> </td> 
+          <td><input type="button" value="0" onclick="getNumber('0')" class = "nbr"> </td> 
+          <!-- solve function call function solve to evaluate value -->
+          <td><input type="button" value="=" onclick="solve()"> </td> 
+          <td><input type="button" value="*" onclick="getNumber('*')"> </td> 
+       </tr> 
+    </table>
+
+
+
+
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
